@@ -3,6 +3,10 @@
 Use React without npm, webpack or developer tool.  
 There is not installation.
 
+## How it works
+
+You can write your components on app.js and your styles on style.css.
+
 ## Running this project
 
 There are two ways you can run the website, pick one:
