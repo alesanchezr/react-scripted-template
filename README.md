@@ -5,13 +5,15 @@ There is not installation.
 
 ## Running this project
 
-If you have python:
+There are two ways you can run the website, pick one:
+
+A) If you have python:
 
 ```py
 $ pip install flask && python server.py
 ```
 
-If you have node and npm:
+B) If you have node and npm:
 
 ```bash
 $ npx -y http-server
