@@ -14,6 +14,7 @@ There are two ways you can run the website, pick one:
 A) If you have python:
 
 ```py
+$ cd site/src
 $ pip install flask && python server.py
 ```
 
