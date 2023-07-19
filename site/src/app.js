@@ -1,7 +1,26 @@
+
+
+
 function Body() {
   const [addProfileInst, setAddProfileInst] = React.useState('addProfInvis')
   const [modalShow, setModalShow] = React.useState('hideModal')
+  const [resumes, setResumes]= React.useState([])
   const wrench = 5
+
+  React.useEffect(() => {
+
+    const getResumes = async () => {
+      const resp = await fetch('/static/resumes.json');
+      if(resp.status == 200){
+        //fill this here
+        const resumeList = await resp.json();
+        console.log(resumeList)
+        setResumes(resumeList)
+      }
+    }
+    getResumes();
+  }, [])
+
   return (
       <main>
 
